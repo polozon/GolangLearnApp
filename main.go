@@ -7,5 +7,5 @@ import (
 )
 
 func main() {
-	fmt.Println(morestrings.ReverseRunes("Peter"))
+	fmt.Println(morestrings.ReverseRunes("Peter Pan"))
 }
