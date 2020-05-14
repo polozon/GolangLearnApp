@@ -13,6 +13,7 @@ func main() {
 	flag.Parse()
 
 	fmt.Printf("IP = %v\n", *ip)
-	fmt.Println(morestrings.ReverseRunes("Peter Pan"))
+	s := morestrings.GetStr()
+	fmt.Println(morestrings.ReverseRunes(s))
 	fmt.Println(cmp.Diff("Hello World", "Hello Go"))
 }
