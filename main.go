@@ -34,4 +34,12 @@ func main() {
 	fmt.Println(morestrings.ReverseRunes(s))
 	fmt.Println(cmp.Diff("Hello World", "Hello Go"))
 	doInterfaceTest()
+
+	// Test struct with methods, almost like a class
+	fmt.Println("\nTest struct with methods")
+	c := interfacetest.PolClass{}
+	c.SetNumbers(10, 20)
+	c.SetTheName("Peter")
+	fmt.Printf("Calculate a + b = %v\n", c.Calculate())
+	fmt.Println("The name is", c.Name)
 }
